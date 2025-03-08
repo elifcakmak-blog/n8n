@@ -9,11 +9,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: main  # Change this if your default branch is different
-          fetch-depth: 0
 
       - name: Sync and merge upstream repository with your current repository
         uses: dabreadman/sync-upstream-repo@v1.3.0
