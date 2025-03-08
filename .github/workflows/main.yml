@@ -19,8 +19,8 @@ jobs:
         run: |
           git remote add upstream https://github.com/n8n-io/n8n.git
           git fetch upstream
-          git checkout main
+          git checkout master
           git merge upstream/main
-          git push origin main
+          git push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
